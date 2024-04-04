@@ -1,0 +1,73 @@
+body{
+	margin: auto;
+	background-color: #3bc7d5;
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+	background-color: #BEA664;
+    color: black;
+	text-align: center;
+    border: 5px solid #000000;
+    height: 4em;
+    padding-top: 10px;
+    width: contain;
+}
+a:link, a:visited {
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: #8B4513;
+  color: white;
+  border: 2px solid black;
+}
+
+#header > img {
+	border: 5px solid black; /*this part needs a left and right border but it causes problems*/
+	border-top: 0px solid black;
+	margin-left: -10px;
+	width: 100%;
+	height: auto;	
+} 
+
+#content {
+	text-align: left;
+	background: #c5fcef;
+	border: 5px solid black;
+	border-top: 0px;
+	border-bottom: 0px;
+
+  margin:auto;
+  margin-top: -5px;
+  padding: 25px;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+
+#box{
+  border: 3mm ridge rgba(20, 60, 150, .6);
+  padding: 1em;
+  margin: 25px;
+  background-color: white;
+}
+
+#box1{
+    margin: 0 0 0 110px;
+}
+
+#footer {
+	padding: 0 10px;
+	background: #BEA664;
+	height: 90px;
+	border: 5px solid #000000;
+	overflow: hidden
+} 
+
+#footer p {
+	margin: -20px
+}
