@@ -7,17 +7,44 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Hawk Island Marina</title>
     <meta name="google-site-verification" content="o3t5PJPnm7BpMRKRo5RXyGIbAkCpZlk7zv7KV-vloOk">
+    <style>
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-brand {
+            margin: auto;
+        }
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-image {
+            background-image: url('images/newmain.png');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+        }
+        @media (max-width: 768px) {
+            .header-image {
+                background-size: auto 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-brown navbar-dark ">
+    <nav class="navbar navbar-expand-sm bg-brown navbar-dark">
         <div class="container">
-            <a class="navbar-brand text-black" href="#">Hawk Island Marina</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-black" href="index.html">HOME</a>
                     </li>
@@ -35,95 +62,98 @@
         </div>
     </nav>
 
-    <!--Header-->
-    <img alt="Hawk Island Marina" src="images/mobileheader.png" class="img-fluid border border-2 border-dark">
+    <!-- Header -->
+    <div class="header-image border border-2 border-dark"></div>
 
-    <!--Everything else-->
-    <div class="container mt-4 ">
+    <!-- Main Content -->
+    <div class="container">
 
-        <!--Top two boxes section -->
+        <!-- Top Two Boxes Section -->
         <div class="row">
-            <!--Left box-->
-            <div class="col-md-8 mb-4">
-                <div id="box" class="p-4 border border-primary bg-body">
+            <!-- Left Box -->
+            <hr class="featurette-divider my-5">
+            <div class="col-md-5 mb-4 mx-auto border border-primary bg-body">
+                <div id="box" class="pt-4 px-5">
                     <h1>Hawk Island Marina</h1>
-                    <h3>ONLY 2 MILES NORTH OF PHILADELPHIA, PA &amp; CAMDEN, NJ</h3>
+                    <h3>Only 2 miles north of Philadelphia, PA & Camden, NJ</h3>
+                    <hr class="featurette-divider">
                     <p>
-                        Hawk Island Marina is conveniently located at the mouth of the RANCOCAS CREEK. Offering quick and easy access to both the Tacony and Burlington Bristol Bridges.
+                        Hawk Island Marina is conveniently located at the mouth of the Rancocas Creek. Offering quick and easy access to both the Tacony and Burlington Bristol Bridges.
                     </p>
                     <p>
-                        In October 2003, John and Karen purchased Hawk Island Marina. Both with family roots in Delanco, NJ and long-time patrons of this marina, they knew that this would be a great opportunity to expand upon the existing marina and incorporate sound environmental policies while maintaining the ecosystem and providing a safe, fun, and positive recreational experience.
+                        In October 2003, John and Karen purchased Hawk Island Marina. Both with family roots in Delanco, NJ, and as long-time patrons of this marina, they knew that this would be a great opportunity to expand upon the existing marina. They aimed to incorporate sound environmental policies while maintaining the ecosystem and providing a safe, fun, and positive recreational experience.
                     </p>
                 </div>
             </div>
 
-            <!--Right box-->
-            <div class="col-md-4 mb-4">
-                <div id="box1" class="p-4 border border-primary bg-body">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/image1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image2.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image3.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image4.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+            <!-- Right Box -->
+            <div class="col-md-6 mb-4">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/image1.png" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image2.png" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image3.png" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image4.png" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <!--Bottom section-->
-        <div class="row">
-
-            <!--Contact us-->
-            <div class="col-sm-6 col-md-3 mb-4 text-center">
+        <!-- Bottom Section -->
+        <div class="row closer-sections">
+            <hr class="featurette-divider my-5">
+            <!-- Contact Us -->
+            <div class="col-sm-6 col-md-3 mb-4 mx-auto text-center">
                 <div id="box" class="p-4 border border-primary bg-body">
                     <h3>Contact Us</h3>
                     <ul class="list-unstyled">
                         <li>130 Rancocas Avenue</li>
                         <li>Delanco, NJ 08075</li>
-                        <li>(856) 461-1415</li>
-                        <li>johnberger@hawkisland.com</li>
+                        <li>Home: (856) 461-1415</li>
+                        <li>Mobile: (856) 461-2707</li>
+                        <li>brodieberger@gmail.com</li>
                     </ul>
                 </div>
             </div>
 
-            <!--facebook link-->
-            <div class="col-sm-6 col-md-4 mb-4 text-center">
+            <!-- Facebook Link -->
+            <div class="col-sm-6 col-md-3 mb-4 mx-auto text-center">
                 <div id="box" class="p-4 border border-primary bg-body">
                     <h3>Check us out on</h3>
-                    <img src="images/facebook_logo.jpg" class="img-fluid" alt="...">
+                    <img src="images/facebook.png" class="img-fluid" alt="Facebook Logo" style="width: 8.5em">
                 </div>
             </div>
+        </div>
 
-            <!--Map image-->
-            <div class="col-sm-12 col-md-5 mb-4">
-                <img src="images/map.gif" class="img-thumbnail" alt="...">
+        <!-- Map Image -->
+        <div class="row">
+            <div class="col-12 mb-4 text-center">
+                <img src="images/map.gif" class="img-thumbnail" alt="Map">
             </div>
         </div>
+        
     </div>
 
     <!-- Footer -->
