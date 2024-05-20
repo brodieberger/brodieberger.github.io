@@ -16,6 +16,7 @@
         .facebook-logo {
             width: 6.7em; /* Default size for smaller screens */
         }
+
         @media (min-width: 576px) {
             .facebook-logo {
                 width: 8.5em; /* Size for medium screens */
@@ -29,6 +30,21 @@
         @media (min-width: 992px) {
             .facebook-logo {
                 width: 8.6em; /* Size for extra-large screens */
+            }
+        }
+        .contact-info {
+            font-size: 1em; /* Default font size */
+        }
+
+        @media (max-width: 576px) {
+            .contact-info {
+                font-size: 0.875em; /* Adjust font size for small screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                font-size: 0.85em; /* Adjust font size for medium screens */
             }
         }
     </style>
@@ -69,7 +85,7 @@
         <div class="row">
             <!-- Left Box -->
             <hr class="featurette-divider my-5">
-            <div class="col-11 col-md-5 mb-4 mx-auto border border-primary bg-body">
+            <div class="col-11 col-lg-5 mb-4 mx-auto border border-primary bg-body">
                 <div id="box" class="pt-4 pt-md-5 px-5">
                     <h1>Hawk Island Marina</h1>
                     <h3>Only 2 miles north of Philadelphia, PA & Camden, NJ</h3>
@@ -122,8 +138,8 @@
         <div class="row justify-content-center">
             <hr class="featurette-divider my-5">
             <!-- Contact Us -->
-            <div class="col-6 col-md-3 mb-4  text-center">
-                <div id="box" class="p-4 border border-primary bg-body">
+            <div class="col-6 col-lg-3 mb-4 text-center">
+                <div id="box" class="p-4 border border-primary bg-body contact-info">
                     <h3>Contact Us</h3>
                     <ul class="list-unstyled">
                         <li>130 Rancocas Avenue</li>
@@ -134,6 +150,7 @@
                     </ul>
                 </div>
             </div>
+
 
             <!-- Facebook Link -->
             <div class="col-6 col-md-3 mb-4  text-center">
