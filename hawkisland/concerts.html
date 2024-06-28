@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Hawk Island Marina</title>
+    <meta name="google-site-verification" content="o3t5PJPnm7BpMRKRo5RXyGIbAkCpZlk7zv7KV-vloOk">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-brown navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="concerts.html">Summer Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="boating_class.html">Boating Classes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <img id="main-image" alt="Hawk Island Marina" src="images/newmain.png" class="img-fluid border border-2 border-dark">
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Top Two Boxes Section -->
+        <div class="row gx-4 d-flex align-items-stretch">
+            <!-- Left Box -->
+            <hr class="featurette-divider my-4">
+            <div class="col-11 col-lg-5 mx-auto border border-primary bg-body mb-4">
+                <div id="box" class="pt-4 pt-md-5 px-5">
+                    <h2>Hawk Island Marina: 2024 Summer Concert Series</h2>
+                    <h5>Sponsored by Delanco Recreation Commission Summer Concert Series</h5>
+                    <hr class="featurette-divider">
+                    <p>
+                        Come out to Hawk Island Marina and enjoy the summer breeze while listening to live music! The events themselves are free, but there will be plenty of refreshments and food for sale. Please remember to bring your own chair!
+                    </p>
+                    <p>
+                        The dates listed here are subject to change. Please see our <a href="https://www.facebook.com/p/Hawk-Island-Marina-100064447879631/">Facebook Page</a> for the most updated information!</p>
+                    </p>
+                    <img src="images/image3.png" class="img-fluid boating-logo" alt="concerts">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Right Box -->
+            <div class="col-11 col-lg-6 mx-auto border border-primary bg-body mb-4">
+                <div id="box" class="pt-4 pt-md-5 px-5">
+                    <img src="images/concerts24.png" class="img-fluid boating-logo" alt="concerts">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brown text-center text-black py-3 mt-5 border border-2 border-black">
+        <p>
+            Copyright &copy; 2024 Hawk Island Marina<br>
+            Website by: <a href="http://www.hawkisland.com/brodie" target="_blank" class="text-black">Brodie Berger</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function updateImage() {
+            const image = document.getElementById('main-image');
+            if (window.innerWidth < 768) {
+                image.src = 'images/mobileheader.png';
+            } else {
+                image.src = 'images/newmain.png';
+            }
+        }
+
+        window.addEventListener('load', updateImage);
+        window.addEventListener('resize', updateImage);
+    </script>
+</body>
+</html>
