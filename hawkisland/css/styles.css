@@ -11,9 +11,7 @@ body {
     margin-right: auto;
 }
 
-.facebook-logo {
-    width: 6.7em; /* Default size for smaller screens */
-}
+
 @media (min-width: 576px) {
     .facebook-logo {
         width: 8.5em; /* Size for medium screens */
@@ -37,4 +35,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
 }
