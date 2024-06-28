@@ -31,6 +31,15 @@
                 width: 8.6em; /* Size for extra-large screens */
             }
         }
+
+        .square-box {
+            width: 100%;
+            aspect-ratio: 1 / 0.78;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +78,7 @@
         <div class="row">
             <!-- Left Box -->
             <hr class="featurette-divider my-5">
-            <div class="col-11 col-md-5 mb-4 mx-auto border border-primary bg-body">
+            <div class="col-11 col-xl-5 mb-4 mx-auto border border-primary bg-body">
                 <div id="box" class="pt-4 pt-md-5 px-5">
                     <h1>Hawk Island Marina</h1>
                     <h3>Only 2 miles north of Philadelphia, PA & Camden, NJ</h3>
@@ -84,7 +93,7 @@
             </div>
 
             <!-- Right Box -->
-            <div class="col-md-7 mb-4 mx-auto">
+            <div class="col-xl-7 mb-4 mx-auto">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -118,26 +127,84 @@
             </div>
         </div>
 
+        <!-- Middle Section -->
+        <div class="row justify-content-center">
+            <hr class="featurette-divider my-5">
+            <!-- Services -->
+
+            <div class="col-12 col-md-5 mb-4 text-center">
+                <div id="services-box" class="square-box p-4 border border-primary bg-body">
+                    <h3>Services</h3>
+                    <hr class="featurette-divider">
+                    <div class="row justify-content-center">
+                    
+                        <ul class="list-group list-group-flush col-4">
+                        <h5>For Sale</h5>
+                          <li class="list-group-item">Boating Equipment</li>
+                          <li class="list-group-item">Boating Accessories</li>
+                          <li class="list-group-item">Snacks and soda</li>
+                          <li class="list-group-item">Ice</li>
+                          <li class="list-group-item">Bait & Tackle</li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush col-4">
+                        <h5>Offering</h5>
+                          <li class="list-group-item">Paved Ramp</li>
+                          <li class="list-group-item">Boat Fueling</li>
+                          <li class="list-group-item">Water to Docks</li>
+                          <li class="list-group-item">Private Bathrooms</li>
+                          <li class="list-group-item">Private Deck Area</li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush col-4">
+                        <h5>Slips</h5>
+                          <li class="list-group-item">Daily Slip</li>
+                          <li class="list-group-item">Weekly Slip</li>
+                          <li class="list-group-item">Monthly Slip</li>
+                          <li class="list-group-item">Seasonal Slip</li>
+                          <li class="list-group-item">Transient Slip</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Events -->
+            <div class="col-12 col-md-5 mb-4 text-center">
+                <div class="square-box p-4 border border-primary bg-body">
+                    
+                    <a href="concerts.html">
+                        <h1>Summer Concert Series</h1>
+                    </a>
+                    <p>Free yearly summer concerts at Hawk Island Marina. Come and enjoy the summer breeze and a live band. Click the image above for more information.
+                    <br><br>
+                    <a href="boat_class.html">
+                        <img src="images/boat_logo.jpeg" class="img-fluid boating-logo" alt="Facebook Logo">
+                    </a>
+                    <p>Boating classes offered by the coast boating school. Click the image above for more information</p>
+                    
+                </div>
+            </div>
+        </div>
+
         <!-- Bottom Section -->
         <div class="row justify-content-center">
             <hr class="featurette-divider my-5">
             <!-- Contact Us -->
-            <div class="col-6 col-md-3 mb-4  text-center">
-                <div id="box" class="p-4 border border-primary bg-body">
+            <div class="col-6 col-xl-3 col-lg-4 col-md-5 col-sm-5 text-center">
+                <div id="contact-box" class="square-box p-4 border border-primary bg-body">
                     <h3>Contact Us</h3>
                     <ul class="list-unstyled">
                         <li>130 Rancocas Avenue</li>
                         <li>Delanco, NJ 08075</li>
                         <li>Home: (856) 461-1415</li>
-                        <li>Mobile: (856) 461-2707</li>
+                        <li>Fax: (856) 461-2707</li>
                         <li>brodieberger@gmail.com</li>
                     </ul>
                 </div>
             </div>
-
             <!-- Facebook Link -->
-            <div class="col-6 col-md-3 mb-4  text-center">
-                <div id="box" class="p-4 border border-primary bg-body">
+            <div class="col-6 col-xl-3 col-lg-4 col-md-5 col-sm-5 text-center mb-4">
+                <div id="facebook-box" class="square-box p-4 border border-primary bg-body">
                     <h3>Check us out on</h3>
                     <a href="https://www.facebook.com/profile.php?id=100064447879631">
                         <img src="images/facebook.png" class="img-fluid facebook-logo" alt="Facebook Logo">
@@ -152,9 +219,8 @@
                 <img src="images/map.gif" class="img-thumbnail" alt="Map">
             </div>
         </div>
-        
+        <hr class="featurette-divider my-5">
     </div>
-    <hr class="featurette-divider my-5">
 
     <!-- Footer -->
     <footer class="bg-brown text-center text-black py-3 mt-5 border border-2 border-black">
